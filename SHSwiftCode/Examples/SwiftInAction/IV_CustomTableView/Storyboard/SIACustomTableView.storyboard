@@ -178,6 +178,13 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="445"/>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </view>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mSo-5b-xWZ">
+                                            <rect key="frame" x="344" y="353" width="50" height="52"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="52" id="NE5-cC-oVx"/>
+                                                <constraint firstAttribute="width" constant="50" id="xwr-bU-dMx"/>
+                                            </constraints>
+                                        </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="1ae-gS-NWl">
                                             <rect key="frame" x="20" y="368" width="244" height="57"/>
                                             <subviews>
@@ -210,6 +217,7 @@
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="mSo-5b-xWZ" secondAttribute="trailing" constant="20" id="6Lr-ov-R5G"/>
                                         <constraint firstItem="GYX-62-uCu" firstAttribute="leading" secondItem="Uwa-OM-M4d" secondAttribute="leading" id="Ioo-1M-2tt"/>
                                         <constraint firstItem="1ae-gS-NWl" firstAttribute="leading" secondItem="Uwa-OM-M4d" secondAttribute="leading" constant="20" id="Laq-eW-mRA"/>
                                         <constraint firstAttribute="bottom" secondItem="GYX-62-uCu" secondAttribute="bottom" id="Qxd-b2-BDE"/>
@@ -223,10 +231,12 @@
                                         <constraint firstAttribute="trailing" secondItem="1ae-gS-NWl" secondAttribute="trailing" constant="150" id="luh-C0-AiY"/>
                                         <constraint firstItem="dwd-BX-seA" firstAttribute="top" secondItem="Uwa-OM-M4d" secondAttribute="top" id="oFc-TA-klt"/>
                                         <constraint firstItem="GYX-62-uCu" firstAttribute="top" secondItem="Uwa-OM-M4d" secondAttribute="top" id="w4t-8u-f8L"/>
+                                        <constraint firstItem="1ae-gS-NWl" firstAttribute="bottom" secondItem="mSo-5b-xWZ" secondAttribute="bottom" constant="20" id="zwN-Jh-mwG"/>
                                     </constraints>
                                     <connections>
                                         <outlet property="buttonHeart" destination="cUJ-33-6kU" id="KE6-8E-9y8"/>
                                         <outlet property="imageViewHeader" destination="GYX-62-uCu" id="ttm-vI-VC9"/>
+                                        <outlet property="imageViewRating" destination="mSo-5b-xWZ" id="bRK-Ey-emu"/>
                                         <outlet property="labelName" destination="iOb-wA-coD" id="lLk-zQ-PTv"/>
                                         <outlet property="labelType" destination="8XZ-kp-W7G" id="sJh-M6-1mg"/>
                                     </connections>
@@ -461,6 +471,9 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="5wn-KN-BjL" kind="unwind" identifier="awesome" unwindAction="rateRestaurantWithSegue:" id="SyL-GA-Mru"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mja-Z9-ibg">
                                         <rect key="frame" x="0.0" y="106" width="176" height="97"/>
@@ -469,6 +482,9 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="5wn-KN-BjL" kind="unwind" identifier="good" unwindAction="rateRestaurantWithSegue:" id="mob-mu-OhR"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cke-0u-E84">
                                         <rect key="frame" x="0.0" y="213" width="172" height="100"/>
@@ -477,6 +493,9 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="5wn-KN-BjL" kind="unwind" identifier="okay" unwindAction="rateRestaurantWithSegue:" id="PdB-it-IR0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PBY-7s-LIY">
                                         <rect key="frame" x="0.0" y="323" width="155" height="101"/>
@@ -485,6 +504,9 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="5wn-KN-BjL" kind="unwind" identifier="bad" unwindAction="rateRestaurantWithSegue:" id="rkc-m3-Ac0"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zz4-DG-I37">
                                         <rect key="frame" x="0.0" y="434" width="200" height="117"/>
@@ -493,6 +515,9 @@
                                             <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle0"/>
                                             <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="5wn-KN-BjL" kind="unwind" identifier="terrible" unwindAction="rateRestaurantWithSegue:" id="dLr-9m-oRM"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -513,9 +538,15 @@
                     <connections>
                         <outlet property="button" destination="XkX-pg-uQm" id="ujl-M0-YxH"/>
                         <outlet property="imageView" destination="enW-f3-dUF" id="0Lw-Vw-AHU"/>
+                        <outletCollection property="buttonRates" destination="hBe-Dk-GDb" collectionClass="NSMutableArray" id="Gpi-no-DoC"/>
+                        <outletCollection property="buttonRates" destination="mja-Z9-ibg" collectionClass="NSMutableArray" id="TOC-HW-tff"/>
+                        <outletCollection property="buttonRates" destination="cke-0u-E84" collectionClass="NSMutableArray" id="Ttu-xn-Wh3"/>
+                        <outletCollection property="buttonRates" destination="PBY-7s-LIY" collectionClass="NSMutableArray" id="D6L-RS-ghs"/>
+                        <outletCollection property="buttonRates" destination="zz4-DG-I37" collectionClass="NSMutableArray" id="XxP-vz-X1x"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bZ3-dj-hll" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5wn-KN-BjL" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2457.971014492754" y="723.88392857142856"/>
         </scene>

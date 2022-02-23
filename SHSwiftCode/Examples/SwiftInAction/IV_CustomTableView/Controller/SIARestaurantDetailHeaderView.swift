@@ -11,6 +11,8 @@ import UIKit
 class SIARestaurantDetailHeaderView: UIView {
 
     @IBOutlet var imageViewHeader: UIImageView!
+    @IBOutlet var imageViewRating: UIImageView!
+    
     @IBOutlet var labelName: UILabel! {
         didSet {
             // MARK: iOS 中的標籤可以多行顯示，你只需要將值變更為 0。在這種情況下，標籤會自動判斷全部的行數來符合它的內容。

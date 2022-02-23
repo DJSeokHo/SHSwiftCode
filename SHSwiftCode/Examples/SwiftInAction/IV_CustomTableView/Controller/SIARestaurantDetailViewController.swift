@@ -13,6 +13,7 @@ class SIARestaurantDetailViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var headerView: SIARestaurantDetailHeaderView!
     
+    
     var resturantModel: RestaurantModel = RestaurantModel()
   
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -131,8 +132,20 @@ class SIARestaurantDetailViewController: UIViewController {
         
     }
     
-    
+    @IBAction func rateRestaurant(segue: UIStoryboardSegue) {
+        
+        ILog.debug(tag: #file, content: "rateRestaurant???")
+        guard let identifier = segue.identifier else {
+            return
+        }
 
+        if let rating = RestaurantModel.Rating(rawValue: identifier) {
+            self.resturantModel.rating = rating
+            self.headerView.imageViewRating.image = UIImage(named: rating.image)
+        }
+
+    }
+    
 }
 
 extension SIARestaurantDetailViewController: UITableViewDataSource, UITableViewDelegate {

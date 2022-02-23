@@ -16,9 +16,15 @@ class SIAReviewViewController: UIViewController {
     
     public var model = RestaurantModel()
     
+    @IBOutlet var buttonRates: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        for buttonRate in buttonRates {
+            buttonRate.alpha = 0
+        }
+        
         // Do any additional setup after loading the view.
         imageView.image = UIImage(named: model.image)
         button.setTitle("", for: .normal)
@@ -26,6 +32,42 @@ class SIAReviewViewController: UIViewController {
         initListener()
         
         imageView.setBlurEffect(style: .dark)
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        fadeInAnimation()
+
+    }
+    
+    func slideInAnimation() {
+        
+    }
+    
+    func fadeInAnimation() {
+        
+        UIView.animate(withDuration: 0.4, delay: 0.1, options: [], animations: {
+            self.buttonRates[0].alpha = 1.0
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 0.4, delay: 0.15, options: [], animations: {
+            self.buttonRates[1].alpha = 1.0
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 0.4, delay: 0.2, options: [], animations: {
+            self.buttonRates[2].alpha = 1.0
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 0.4, delay: 0.25, options: [], animations: {
+            self.buttonRates[3].alpha = 1.0
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 0.4, delay: 0.3, options: [], animations: {
+            self.buttonRates[4].alpha = 1.0
+        }, completion: nil)
+        
     }
     
     func initListener() {
