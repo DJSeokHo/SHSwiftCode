@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		563C11C327C87A90008F079E /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C11C227C87A90008F079E /* RoundedTextField.swift */; };
 		563C11C527C87DE5008F079E /* SIANewRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C11C427C87DE5008F079E /* SIANewRestaurantController.swift */; };
-		563C11C827C89CDD008F079E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C11C627C89CDD008F079E /* CameraViewController.swift */; };
 		563C11CB27C8CD9C008F079E /* SystemPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C11CA27C8CD9C008F079E /* SystemPhotoPicker.swift */; };
 		56C5C00327C4D4E70004B8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C5C00227C4D4E70004B8BD /* AppDelegate.swift */; };
 		56C5C00527C4D4E70004B8BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C5C00427C4D4E70004B8BD /* SceneDelegate.swift */; };
@@ -228,7 +227,6 @@
 /* Begin PBXFileReference section */
 		563C11C227C87A90008F079E /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		563C11C427C87DE5008F079E /* SIANewRestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIANewRestaurantController.swift; sourceTree = "<group>"; };
-		563C11C627C89CDD008F079E /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		563C11CA27C8CD9C008F079E /* SystemPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemPhotoPicker.swift; sourceTree = "<group>"; };
 		56C5BFFF27C4D4E70004B8BD /* SHSwiftCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHSwiftCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C5C00227C4D4E70004B8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -759,7 +757,7 @@
 		56D3308B27C5E9EE00A021A2 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				56D3308C27C5E9EE00A021A2 /* Camera */,
+				56D3308C27C5E9EE00A021A2 /* SystemPhoto */,
 				56D3308F27C5E9EE00A021A2 /* Location */,
 				56D3309127C5E9EE00A021A2 /* AutoLayoutManager */,
 				56D3309327C5E9EE00A021A2 /* MapKitManager */,
@@ -767,13 +765,12 @@
 			path = Modules;
 			sourceTree = "<group>";
 		};
-		56D3308C27C5E9EE00A021A2 /* Camera */ = {
+		56D3308C27C5E9EE00A021A2 /* SystemPhoto */ = {
 			isa = PBXGroup;
 			children = (
-				563C11C627C89CDD008F079E /* CameraViewController.swift */,
 				563C11CA27C8CD9C008F079E /* SystemPhotoPicker.swift */,
 			);
-			path = Camera;
+			path = SystemPhoto;
 			sourceTree = "<group>";
 		};
 		56D3308F27C5E9EE00A021A2 /* Location */ = {
@@ -1780,7 +1777,6 @@
 				56D3326E27C5F6AD00A021A2 /* SIATableViewViewController.swift in Sources */,
 				56D3323327C5F69700A021A2 /* BasicPickerViewDemoViewController.swift in Sources */,
 				56D3311D27C5F63200A021A2 /* BasicFoundation.swift in Sources */,
-				563C11C827C89CDD008F079E /* CameraViewController.swift in Sources */,
 				56D3313A27C5F63200A021A2 /* Company.swift in Sources */,
 				56D3309827C5E9EE00A021A2 /* MemberModel.swift in Sources */,
 				56D3307727C5E9E200A021A2 /* UIViewControllerExtension.swift in Sources */,
