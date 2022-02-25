@@ -105,13 +105,12 @@ extension UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
-    
-    public func tapSpaceAction(action: Selector) {
-
-        let tap = UITapGestureRecognizer(target: self, action: action)
+    public func tapSpaceToEndEditing() {
+        let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
     }
+    
     
 //    public func showTwoButtonWithOneInputAlertView(from: UIViewController, setTitle title: String, setMessage message: String, setInputPlaceHolder placeHolder: String, setContent content: String, setConfirmButtonTitle confirmTitle: String, setCancelButtonTitle cancelTitle: String, setConfirmDelegate confirmDelegate: @escaping (String) -> Void) {
 //        

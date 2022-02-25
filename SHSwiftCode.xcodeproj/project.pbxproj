@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		563C11C327C87A90008F079E /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C11C227C87A90008F079E /* RoundedTextField.swift */; };
+		563C11C527C87DE5008F079E /* SIANewRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C11C427C87DE5008F079E /* SIANewRestaurantController.swift */; };
+		563C11C827C89CDD008F079E /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C11C627C89CDD008F079E /* CameraViewController.swift */; };
+		563C11CB27C8CD9C008F079E /* SystemPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C11CA27C8CD9C008F079E /* SystemPhotoPicker.swift */; };
 		56C5C00327C4D4E70004B8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C5C00227C4D4E70004B8BD /* AppDelegate.swift */; };
 		56C5C00527C4D4E70004B8BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C5C00427C4D4E70004B8BD /* SceneDelegate.swift */; };
 		56C5C00727C4D4E70004B8BD /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C5C00627C4D4E70004B8BD /* MainViewController.swift */; };
@@ -48,8 +52,6 @@
 		56D3309D27C5E9EE00A021A2 /* FirebaseDemoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D3308627C5E9EE00A021A2 /* FirebaseDemoViewController.xib */; };
 		56D3309E27C5E9EE00A021A2 /* CloudStorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3308827C5E9EE00A021A2 /* CloudStorageManager.swift */; };
 		56D3309F27C5E9EE00A021A2 /* CloudDBManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3308A27C5E9EE00A021A2 /* CloudDBManager.swift */; };
-		56D330A027C5E9EE00A021A2 /* CameraViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56D3308D27C5E9EE00A021A2 /* CameraViewController.xib */; };
-		56D330A127C5E9EE00A021A2 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3308E27C5E9EE00A021A2 /* CameraViewController.swift */; };
 		56D330A227C5E9EE00A021A2 /* LocationWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3309027C5E9EE00A021A2 /* LocationWrapper.swift */; };
 		56D330A327C5E9EE00A021A2 /* AutoLayoutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3309227C5E9EE00A021A2 /* AutoLayoutManager.swift */; };
 		56D330A427C5E9EE00A021A2 /* MapKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3309427C5E9EE00A021A2 /* MapKitManager.swift */; };
@@ -224,6 +226,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		563C11C227C87A90008F079E /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
+		563C11C427C87DE5008F079E /* SIANewRestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIANewRestaurantController.swift; sourceTree = "<group>"; };
+		563C11C627C89CDD008F079E /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		563C11CA27C8CD9C008F079E /* SystemPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemPhotoPicker.swift; sourceTree = "<group>"; };
 		56C5BFFF27C4D4E70004B8BD /* SHSwiftCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHSwiftCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C5C00227C4D4E70004B8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56C5C00427C4D4E70004B8BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -269,8 +275,6 @@
 		56D3308627C5E9EE00A021A2 /* FirebaseDemoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FirebaseDemoViewController.xib; sourceTree = "<group>"; };
 		56D3308827C5E9EE00A021A2 /* CloudStorageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudStorageManager.swift; sourceTree = "<group>"; };
 		56D3308A27C5E9EE00A021A2 /* CloudDBManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudDBManager.swift; sourceTree = "<group>"; };
-		56D3308D27C5E9EE00A021A2 /* CameraViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CameraViewController.xib; sourceTree = "<group>"; };
-		56D3308E27C5E9EE00A021A2 /* CameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
 		56D3309027C5E9EE00A021A2 /* LocationWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationWrapper.swift; sourceTree = "<group>"; };
 		56D3309227C5E9EE00A021A2 /* AutoLayoutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayoutManager.swift; sourceTree = "<group>"; };
 		56D3309427C5E9EE00A021A2 /* MapKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapKitManager.swift; sourceTree = "<group>"; };
@@ -456,6 +460,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		563C11C027C87A63008F079E /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				563C11C227C87A90008F079E /* RoundedTextField.swift */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		56C5BFF627C4D4E70004B8BD = {
 			isa = PBXGroup;
 			children = (
@@ -512,6 +524,7 @@
 		56D32F0027C5D47100A021A2 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				563C11C027C87A63008F079E /* CustomView */,
 				56D3307A27C5E9EE00A021A2 /* Firebase */,
 				56D3308B27C5E9EE00A021A2 /* Modules */,
 				56D3306F27C5E9E200A021A2 /* Extension */,
@@ -757,8 +770,8 @@
 		56D3308C27C5E9EE00A021A2 /* Camera */ = {
 			isa = PBXGroup;
 			children = (
-				56D3308D27C5E9EE00A021A2 /* CameraViewController.xib */,
-				56D3308E27C5E9EE00A021A2 /* CameraViewController.swift */,
+				563C11C627C89CDD008F079E /* CameraViewController.swift */,
+				563C11CA27C8CD9C008F079E /* SystemPhotoPicker.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -1550,6 +1563,7 @@
 				56D3325F27C5F6AD00A021A2 /* SIACustomTableViewViewController.swift */,
 				56D3326027C5F6AD00A021A2 /* SIARestaurantDetailHeaderView.swift */,
 				56D3326127C5F6AD00A021A2 /* SIAMapViewController.swift */,
+				563C11C427C87DE5008F079E /* SIANewRestaurantController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1678,7 +1692,6 @@
 				56D3322A27C5F69700A021A2 /* BasicGroupTableViewController.xib in Resources */,
 				56D3322127C5F69700A021A2 /* AutoLayoutScrollWithoutStackViewController.xib in Resources */,
 				56D3322627C5F69700A021A2 /* AutoLayoutTestViewController.xib in Resources */,
-				56D330A027C5E9EE00A021A2 /* CameraViewController.xib in Resources */,
 				56D3326C27C5F6AD00A021A2 /* SIAHelloWorld.storyboard in Resources */,
 				56D3320F27C5F69700A021A2 /* BasicDatePickerViewController.xib in Resources */,
 				56D3323427C5F69700A021A2 /* BasicPickerViewDemoViewController.xib in Resources */,
@@ -1745,6 +1758,7 @@
 				56D3327B27C5F6AD00A021A2 /* RestaurantDetailTextCell.swift in Sources */,
 				56D330A227C5E9EE00A021A2 /* LocationWrapper.swift in Sources */,
 				56D3320627C5F69700A021A2 /* NavigationRootViewController.swift in Sources */,
+				563C11C527C87DE5008F079E /* SIANewRestaurantController.swift in Sources */,
 				56D330A327C5E9EE00A021A2 /* AutoLayoutManager.swift in Sources */,
 				56D3320B27C5F69700A021A2 /* SecondViewController.swift in Sources */,
 				56D331F227C5F69700A021A2 /* BasicUIViewController.swift in Sources */,
@@ -1762,9 +1776,11 @@
 				56D3312D27C5F63200A021A2 /* ProtocolTestImpl.swift in Sources */,
 				56D3307627C5E9E200A021A2 /* UIImageViewExtension.swift in Sources */,
 				56D3309E27C5E9EE00A021A2 /* CloudStorageManager.swift in Sources */,
+				563C11CB27C8CD9C008F079E /* SystemPhotoPicker.swift in Sources */,
 				56D3326E27C5F6AD00A021A2 /* SIATableViewViewController.swift in Sources */,
 				56D3323327C5F69700A021A2 /* BasicPickerViewDemoViewController.swift in Sources */,
 				56D3311D27C5F63200A021A2 /* BasicFoundation.swift in Sources */,
+				563C11C827C89CDD008F079E /* CameraViewController.swift in Sources */,
 				56D3313A27C5F63200A021A2 /* Company.swift in Sources */,
 				56D3309827C5E9EE00A021A2 /* MemberModel.swift in Sources */,
 				56D3307727C5E9E200A021A2 /* UIViewControllerExtension.swift in Sources */,
@@ -1793,7 +1809,6 @@
 				56D3306027C5E97800A021A2 /* StoryboardUtility.swift in Sources */,
 				56D3306A27C5E97800A021A2 /* FontUtility.swift in Sources */,
 				56D3322027C5F69700A021A2 /* AutoLayoutTestViewController.swift in Sources */,
-				56D330A127C5E9EE00A021A2 /* CameraViewController.swift in Sources */,
 				56D3311C27C5F63200A021A2 /* FunctionTypeParameter.swift in Sources */,
 				56D331F927C5F69700A021A2 /* BasicSwitchViewController.swift in Sources */,
 				56D3307527C5E9E200A021A2 /* UIButtonExtension.swift in Sources */,
@@ -1815,6 +1830,7 @@
 				56D3311E27C5F63200A021A2 /* BasicCollection.swift in Sources */,
 				56D3306927C5E97800A021A2 /* DisplayUtility.swift in Sources */,
 				56D3309927C5E9EE00A021A2 /* ProductModel.swift in Sources */,
+				563C11C327C87A90008F079E /* RoundedTextField.swift in Sources */,
 				56D3324127C5F69700A021A2 /* BasicCustomCameraViewController.swift in Sources */,
 				56D3321227C5F69700A021A2 /* AutoWrapContentHeightCollectionViewAdapter.swift in Sources */,
 				56D3313427C5F63200A021A2 /* Apple.swift in Sources */,

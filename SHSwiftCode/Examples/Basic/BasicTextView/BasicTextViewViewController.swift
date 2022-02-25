@@ -30,7 +30,7 @@ class BasicTextViewViewController: UIViewController, UITextViewDelegate {
         super.viewWillAppear(animated)
         
         /* 点击空白处隐藏键盘 */
-        tapSpaceAction(action: #selector(self.hideKeyboard))
+        tapSpaceToEndEditing()
     }
     
     private func addCustomTextView() {
