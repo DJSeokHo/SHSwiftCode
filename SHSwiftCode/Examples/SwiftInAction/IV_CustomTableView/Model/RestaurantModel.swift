@@ -7,58 +7,56 @@
 //
 
 import Foundation
+import CoreData
 
-struct RestaurantModel: Hashable {
+class RestaurantModel: NSManagedObject {
+    
+    @nonobjc public class func fetchRequest() -> NSFetchRequest<RestaurantModel> {
+        return NSFetchRequest<RestaurantModel>(entityName: "RestaurantEntity")
+    }
+
+    @NSManaged public var name: String
+    @NSManaged public var type: String
+    @NSManaged public var location: String
+    @NSManaged public var phone: String
+    @NSManaged public var summary: String
+    @NSManaged public var image: Data
+    @NSManaged public var ratingText: String?
+    @NSManaged public var isFavorite: Bool
+
+}
+
+extension RestaurantModel {
     
     enum Rating: String {
-        
         case awesome
         case good
         case okay
         case bad
         case terrible
-        
+
         var image: String {
-            
             switch self {
-                
-            case .awesome:
-                return "love"
-            case .good:
-                return "cool"
-            case .okay:
-                return "happy"
-            case .bad:
-                return "sad"
-            case .terrible:
-                return "angry"
+            case .awesome: return "love"
+            case .good: return "cool"
+            case .okay: return "happy"
+            case .bad: return "sad"
+            case .terrible: return "angry"
+            }
+        }
+    }
+    
+    var rating: Rating? {
+        get {
+            guard let ratingText = ratingText else {
+                return nil
             }
             
+            return Rating(rawValue: ratingText)
         }
         
+        set {
+            self.ratingText = newValue?.rawValue
+        }
     }
-    
-    var name: String = ""
-    var type: String = ""
-    var location: String = ""
-    
-    var phone: String = ""
-    var description: String = ""
-    
-    var image: String = ""
-    var isFavorite: Bool = false
-    var rating: Rating?
-    
-    init() {}
-
-    init(name: String, type: String, location: String, phone: String, description: String, image: String, isFavorite: Bool) {
-        self.name = name
-        self.type = type
-        self.location = location
-        self.phone = phone
-        self.description = description
-        self.image = image
-        self.isFavorite = isFavorite
-    }
-
 }

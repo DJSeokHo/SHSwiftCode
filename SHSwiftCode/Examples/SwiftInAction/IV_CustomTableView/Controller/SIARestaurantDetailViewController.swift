@@ -78,7 +78,7 @@ class SIARestaurantDetailViewController: UIViewController {
         
         headerView.labelName.text = resturantModel.name
         headerView.labelType.text = resturantModel.type
-        headerView.imageViewHeader.image = UIImage(named: resturantModel.image)
+        headerView.imageViewHeader.image = UIImage(data: resturantModel.image)
 
         headerView.buttonHeart.tintColor = resturantModel.isFavorite ? .systemYellow : .white
         headerView.buttonHeart.setImage(

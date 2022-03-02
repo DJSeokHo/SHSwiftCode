@@ -46,8 +46,8 @@ class SIACustomTableViewViewController: UITableViewController {
         parentViewController.presentUIViewController(target: SIACustomNavigationController(rootViewController: viewController))
     }
     
-    var restaurantModelList:[RestaurantModel] = TempData.createTempData()
-    
+//    var restaurantModelList:[RestaurantModel] = TempData.createTempData()
+    var restaurantModelList:[RestaurantModel] = []
     
     public lazy var dataSource = configureDataSource()
     
@@ -160,7 +160,7 @@ class SIACustomTableViewViewController: UITableViewController {
                 let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! SIACustomTableViewCell
                 
                 cell.labelName?.text = restaurantModel.name
-                cell.thumbnailImageView?.image = UIImage(named: restaurantModel.image)
+                cell.thumbnailImageView?.image = UIImage(data: restaurantModel.image)
                 cell.labelLocation?.text = restaurantModel.location
                 cell.labelType?.text = restaurantModel.type
                 
@@ -235,7 +235,7 @@ class SIACustomTableViewViewController: UITableViewController {
 
             let defaultText = "Just checking in at " + restaurant.name
             
-            if let imageToShare = UIImage(named: restaurant.image) {
+            if let imageToShare = UIImage(data: restaurant.image) {
                 self.showActivity(activityItems: [defaultText, imageToShare])
             }
             else  {
