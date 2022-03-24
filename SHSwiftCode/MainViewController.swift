@@ -20,10 +20,10 @@ class MainViewController: UIViewController {
             ThreadUtility.startUIThread(runnable: {
                 
 //                MapKitExampleViewController.start(from: self)
-//                SIAHelloWorldViewController.start(from: self)
+                SIAHelloWorldViewController.start(from: self)
 //                SIAStackLayoutViewController.start(from: self)
 //                SIATableViewViewController.start(from: self)
-                SIACustomTableViewViewController.start(from: self)
+//                SIACustomTableViewViewController.start(from: self)
                 
             }, afterSeconds: 1.5)
         }

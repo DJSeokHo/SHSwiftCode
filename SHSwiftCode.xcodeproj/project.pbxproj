@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		563C11C327C87A90008F079E /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C11C227C87A90008F079E /* RoundedTextField.swift */; };
-		563C11C527C87DE5008F079E /* SIANewRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C11C427C87DE5008F079E /* SIANewRestaurantController.swift */; };
 		563C11CB27C8CD9C008F079E /* SystemPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C11CA27C8CD9C008F079E /* SystemPhotoPicker.swift */; };
 		56C5303A27CF532200EA7C39 /* FoodPin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56C5303827CF532200EA7C39 /* FoodPin.xcdatamodeld */; };
 		56C5C00327C4D4E70004B8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C5C00227C4D4E70004B8BD /* AppDelegate.swift */; };
@@ -206,27 +205,12 @@
 		56D3326E27C5F6AD00A021A2 /* SIATableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3325427C5F6AD00A021A2 /* SIATableViewViewController.swift */; };
 		56D3326F27C5F6AD00A021A2 /* SIAStackLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D3325627C5F6AD00A021A2 /* SIAStackLayout.storyboard */; };
 		56D3327027C5F6AD00A021A2 /* SIAStackLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3325727C5F6AD00A021A2 /* SIAStackLayoutViewController.swift */; };
-		56D3327127C5F6AD00A021A2 /* SIACustomTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56D3325A27C5F6AD00A021A2 /* SIACustomTableView.storyboard */; };
-		56D3327227C5F6AD00A021A2 /* SIACustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3325C27C5F6AD00A021A2 /* SIACustomNavigationController.swift */; };
-		56D3327327C5F6AD00A021A2 /* SIAReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3325D27C5F6AD00A021A2 /* SIAReviewViewController.swift */; };
-		56D3327427C5F6AD00A021A2 /* SIARestaurantDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3325E27C5F6AD00A021A2 /* SIARestaurantDetailViewController.swift */; };
-		56D3327527C5F6AD00A021A2 /* SIACustomTableViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3325F27C5F6AD00A021A2 /* SIACustomTableViewViewController.swift */; };
-		56D3327627C5F6AD00A021A2 /* SIARestaurantDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3326027C5F6AD00A021A2 /* SIARestaurantDetailHeaderView.swift */; };
-		56D3327727C5F6AD00A021A2 /* SIAMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3326127C5F6AD00A021A2 /* SIAMapViewController.swift */; };
-		56D3327827C5F6AD00A021A2 /* RestaurantDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3326327C5F6AD00A021A2 /* RestaurantDiffableDataSource.swift */; };
-		56D3327927C5F6AD00A021A2 /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3326427C5F6AD00A021A2 /* RestaurantModel.swift */; };
-		56D3327A27C5F6AD00A021A2 /* TempData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3326527C5F6AD00A021A2 /* TempData.swift */; };
-		56D3327B27C5F6AD00A021A2 /* RestaurantDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3326727C5F6AD00A021A2 /* RestaurantDetailTextCell.swift */; };
-		56D3327C27C5F6AD00A021A2 /* RestaurantDetailMapCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3326827C5F6AD00A021A2 /* RestaurantDetailMapCell.swift */; };
-		56D3327D27C5F6AD00A021A2 /* SIACustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3326927C5F6AD00A021A2 /* SIACustomTableViewCell.swift */; };
-		56D3327E27C5F6AD00A021A2 /* RestaurantDetailTwoColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3326A27C5F6AD00A021A2 /* RestaurantDetailTwoColumnCell.swift */; };
 		56D3328327C602BC00A021A2 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56D3328127C6023F00A021A2 /* Nunito-Bold.ttf */; };
 		56D3328427C602BC00A021A2 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56D3328227C6023F00A021A2 /* Nunito-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		563C11C227C87A90008F079E /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
-		563C11C427C87DE5008F079E /* SIANewRestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SIANewRestaurantController.swift; sourceTree = "<group>"; };
 		563C11CA27C8CD9C008F079E /* SystemPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemPhotoPicker.swift; sourceTree = "<group>"; };
 		56C5303927CF532200EA7C39 /* FoodPin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodPin.xcdatamodel; sourceTree = "<group>"; };
 		56C5BFFF27C4D4E70004B8BD /* SHSwiftCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHSwiftCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -428,20 +412,6 @@
 		56D3325427C5F6AD00A021A2 /* SIATableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIATableViewViewController.swift; sourceTree = "<group>"; };
 		56D3325627C5F6AD00A021A2 /* SIAStackLayout.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SIAStackLayout.storyboard; sourceTree = "<group>"; };
 		56D3325727C5F6AD00A021A2 /* SIAStackLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIAStackLayoutViewController.swift; sourceTree = "<group>"; };
-		56D3325A27C5F6AD00A021A2 /* SIACustomTableView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SIACustomTableView.storyboard; sourceTree = "<group>"; };
-		56D3325C27C5F6AD00A021A2 /* SIACustomNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIACustomNavigationController.swift; sourceTree = "<group>"; };
-		56D3325D27C5F6AD00A021A2 /* SIAReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIAReviewViewController.swift; sourceTree = "<group>"; };
-		56D3325E27C5F6AD00A021A2 /* SIARestaurantDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIARestaurantDetailViewController.swift; sourceTree = "<group>"; };
-		56D3325F27C5F6AD00A021A2 /* SIACustomTableViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIACustomTableViewViewController.swift; sourceTree = "<group>"; };
-		56D3326027C5F6AD00A021A2 /* SIARestaurantDetailHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIARestaurantDetailHeaderView.swift; sourceTree = "<group>"; };
-		56D3326127C5F6AD00A021A2 /* SIAMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIAMapViewController.swift; sourceTree = "<group>"; };
-		56D3326327C5F6AD00A021A2 /* RestaurantDiffableDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDiffableDataSource.swift; sourceTree = "<group>"; };
-		56D3326427C5F6AD00A021A2 /* RestaurantModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
-		56D3326527C5F6AD00A021A2 /* TempData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TempData.swift; sourceTree = "<group>"; };
-		56D3326727C5F6AD00A021A2 /* RestaurantDetailTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTextCell.swift; sourceTree = "<group>"; };
-		56D3326827C5F6AD00A021A2 /* RestaurantDetailMapCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailMapCell.swift; sourceTree = "<group>"; };
-		56D3326927C5F6AD00A021A2 /* SIACustomTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIACustomTableViewCell.swift; sourceTree = "<group>"; };
-		56D3326A27C5F6AD00A021A2 /* RestaurantDetailTwoColumnCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTwoColumnCell.swift; sourceTree = "<group>"; };
 		56D3328127C6023F00A021A2 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		56D3328227C6023F00A021A2 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1527,55 +1497,8 @@
 		56D3325827C5F6AD00A021A2 /* IV_CustomTableView */ = {
 			isa = PBXGroup;
 			children = (
-				56D3325927C5F6AD00A021A2 /* Storyboard */,
-				56D3325B27C5F6AD00A021A2 /* Controller */,
-				56D3326227C5F6AD00A021A2 /* Model */,
-				56D3326627C5F6AD00A021A2 /* View */,
 			);
 			path = IV_CustomTableView;
-			sourceTree = "<group>";
-		};
-		56D3325927C5F6AD00A021A2 /* Storyboard */ = {
-			isa = PBXGroup;
-			children = (
-				56D3325A27C5F6AD00A021A2 /* SIACustomTableView.storyboard */,
-			);
-			path = Storyboard;
-			sourceTree = "<group>";
-		};
-		56D3325B27C5F6AD00A021A2 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				56D3325C27C5F6AD00A021A2 /* SIACustomNavigationController.swift */,
-				56D3325D27C5F6AD00A021A2 /* SIAReviewViewController.swift */,
-				56D3325E27C5F6AD00A021A2 /* SIARestaurantDetailViewController.swift */,
-				56D3325F27C5F6AD00A021A2 /* SIACustomTableViewViewController.swift */,
-				56D3326027C5F6AD00A021A2 /* SIARestaurantDetailHeaderView.swift */,
-				56D3326127C5F6AD00A021A2 /* SIAMapViewController.swift */,
-				563C11C427C87DE5008F079E /* SIANewRestaurantController.swift */,
-			);
-			path = Controller;
-			sourceTree = "<group>";
-		};
-		56D3326227C5F6AD00A021A2 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				56D3326327C5F6AD00A021A2 /* RestaurantDiffableDataSource.swift */,
-				56D3326427C5F6AD00A021A2 /* RestaurantModel.swift */,
-				56D3326527C5F6AD00A021A2 /* TempData.swift */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		56D3326627C5F6AD00A021A2 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				56D3326727C5F6AD00A021A2 /* RestaurantDetailTextCell.swift */,
-				56D3326827C5F6AD00A021A2 /* RestaurantDetailMapCell.swift */,
-				56D3326927C5F6AD00A021A2 /* SIACustomTableViewCell.swift */,
-				56D3326A27C5F6AD00A021A2 /* RestaurantDetailTwoColumnCell.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		56D3327F27C601D600A021A2 /* Resources */ = {
@@ -1671,7 +1594,6 @@
 				56D3323627C5F69700A021A2 /* BasicPickerViewController.xib in Resources */,
 				56D331F327C5F69700A021A2 /* BasicStepperViewController.xib in Resources */,
 				56D3314D27C5F65000A021A2 /* IGLikeCollectionViewCell.xib in Resources */,
-				56D3327127C5F6AD00A021A2 /* SIACustomTableView.storyboard in Resources */,
 				56D3323C27C5F69700A021A2 /* SQLiteDemoViewController.xib in Resources */,
 				56D3324D27C5F69700A021A2 /* BasicSearchViewController.xib in Resources */,
 				56D3321027C5F69700A021A2 /* AutoWrapContentHeightCollectionViewController.xib in Resources */,
@@ -1724,36 +1646,29 @@
 			files = (
 				56D3312C27C5F63200A021A2 /* ProtocolTestDemo.swift in Sources */,
 				56D3313C27C5F63200A021A2 /* BasicCheckAPICanUsable.swift in Sources */,
-				56D3327527C5F6AD00A021A2 /* SIACustomTableViewViewController.swift in Sources */,
 				56D3311B27C5F63200A021A2 /* TrailingClosure.swift in Sources */,
 				56D3312327C5F63200A021A2 /* ExampleProtocol.swift in Sources */,
 				56D3324527C5F69700A021A2 /* DataViewController.swift in Sources */,
 				56D3305F27C5E97800A021A2 /* UserDefaultsUtility.swift in Sources */,
-				56D3327427C5F6AD00A021A2 /* SIARestaurantDetailViewController.swift in Sources */,
 				56D3320327C5F69700A021A2 /* BasicAlumbImagePickerViewController.swift in Sources */,
 				56C5C00727C4D4E70004B8BD /* MainViewController.swift in Sources */,
 				56D331F827C5F69700A021A2 /* BasicImageViewController.swift in Sources */,
 				56D3306B27C5E97800A021A2 /* PermissionUtility.swift in Sources */,
-				56D3327227C5F6AD00A021A2 /* SIACustomNavigationController.swift in Sources */,
 				56D3311827C5F63200A021A2 /* BasicString.swift in Sources */,
 				56D3306327C5E97800A021A2 /* AnimationUtility.swift in Sources */,
 				56D3320E27C5F69700A021A2 /* BasicDatePickerViewController.swift in Sources */,
 				56D3322327C5F69700A021A2 /* DynamicStackViewViewController.swift in Sources */,
 				56D3314E27C5F65000A021A2 /* IGLikeCollectionViewCell.swift in Sources */,
 				56D331F427C5F69700A021A2 /* BasicStepperViewController.swift in Sources */,
-				56D3327A27C5F6AD00A021A2 /* TempData.swift in Sources */,
 				56D331FD27C5F69700A021A2 /* BasicLabelViewController.swift in Sources */,
 				56D3306E27C5E97800A021A2 /* ILog.swift in Sources */,
-				56D3327B27C5F6AD00A021A2 /* RestaurantDetailTextCell.swift in Sources */,
 				56D330A227C5E9EE00A021A2 /* LocationWrapper.swift in Sources */,
 				56D3320627C5F69700A021A2 /* NavigationRootViewController.swift in Sources */,
-				563C11C527C87DE5008F079E /* SIANewRestaurantController.swift in Sources */,
 				56D330A327C5E9EE00A021A2 /* AutoLayoutManager.swift in Sources */,
 				56D3320B27C5F69700A021A2 /* SecondViewController.swift in Sources */,
 				56D331F227C5F69700A021A2 /* BasicUIViewController.swift in Sources */,
 				56D3322C27C5F69700A021A2 /* BasicTableViewController.swift in Sources */,
 				56D3322827C5F69700A021A2 /* StackViewTestViewController.swift in Sources */,
-				56D3327E27C5F6AD00A021A2 /* RestaurantDetailTwoColumnCell.swift in Sources */,
 				56D3315127C5F65000A021A2 /* IGLikeCollectionView.swift in Sources */,
 				56C5C00327C4D4E70004B8BD /* AppDelegate.swift in Sources */,
 				56D3323F27C5F69700A021A2 /* BasucCapturedPictureViewController.swift in Sources */,
@@ -1785,7 +1700,6 @@
 				56D3326B27C5F6AD00A021A2 /* SIAHelloWorldViewController.swift in Sources */,
 				56D3306627C5E97800A021A2 /* StorageUtility.swift in Sources */,
 				56D3322227C5F69700A021A2 /* AutoStackViewController.swift in Sources */,
-				56D3327327C5F6AD00A021A2 /* SIAReviewViewController.swift in Sources */,
 				56D3306D27C5E97800A021A2 /* ThreadUtility.swift in Sources */,
 				56D331ED27C5F69700A021A2 /* BasicCollectionItemCollectionViewCell.swift in Sources */,
 				56D3320C27C5F69700A021A2 /* BasicScrollBigViewController.swift in Sources */,
@@ -1803,12 +1717,10 @@
 				56D3312A27C5F63200A021A2 /* ProtocolTest.swift in Sources */,
 				56D3313227C5F63200A021A2 /* FlyCar.swift in Sources */,
 				56D3321D27C5F69700A021A2 /* StackInScrollViewController.swift in Sources */,
-				56D3327827C5F6AD00A021A2 /* RestaurantDiffableDataSource.swift in Sources */,
 				56D3313D27C5F63200A021A2 /* BasicControlFlow.swift in Sources */,
 				56D3306527C5E97800A021A2 /* ImageUtility.swift in Sources */,
 				56D3313727C5F63200A021A2 /* Wolf.swift in Sources */,
 				56D3315227C5F65000A021A2 /* IGLikeCollectionViewLayout.swift in Sources */,
-				56D3327C27C5F6AD00A021A2 /* RestaurantDetailMapCell.swift in Sources */,
 				56D3312227C5F63200A021A2 /* SimpleStructure.swift in Sources */,
 				56D3314C27C5F65000A021A2 /* IGLikeListCollectionViewCell.swift in Sources */,
 				56D3312527C5F63200A021A2 /* RankEnum.swift in Sources */,
@@ -1843,15 +1755,12 @@
 				56D3320127C5F69700A021A2 /* ImagePicker.swift in Sources */,
 				56D3323D27C5F69700A021A2 /* SimpleAnimationViewController.swift in Sources */,
 				56D3306C27C5E97800A021A2 /* UUIDUtility.swift in Sources */,
-				56D3327927C5F6AD00A021A2 /* RestaurantModel.swift in Sources */,
 				56D3324727C5F69700A021A2 /* BasicSliderViewController.swift in Sources */,
 				56D3313527C5F63200A021A2 /* Person.swift in Sources */,
 				56D3309A27C5E9EE00A021A2 /* MemberModelService.swift in Sources */,
 				56D3312127C5F63200A021A2 /* SimpleClass.swift in Sources */,
 				56D3306227C5E97800A021A2 /* DateUtility.swift in Sources */,
-				56D3327D27C5F6AD00A021A2 /* SIACustomTableViewCell.swift in Sources */,
 				56D3312427C5F63200A021A2 /* Shape.swift in Sources */,
-				56D3327727C5F6AD00A021A2 /* SIAMapViewController.swift in Sources */,
 				56D3313127C5F63200A021A2 /* Car.swift in Sources */,
 				56D3313B27C5F63200A021A2 /* BasicEnum.swift in Sources */,
 				56D3323527C5F69700A021A2 /* CustomPickerViewController.swift in Sources */,
@@ -1862,7 +1771,6 @@
 				56D3312727C5F63200A021A2 /* BasicConsoleTest.swift in Sources */,
 				56D3322D27C5F69700A021A2 /* BasicGroupTableViewController.swift in Sources */,
 				56D3321627C5F69700A021A2 /* CollectionAutoLayoutViewController.swift in Sources */,
-				56D3327627C5F6AD00A021A2 /* SIARestaurantDetailHeaderView.swift in Sources */,
 				56D3312B27C5F63200A021A2 /* ProtocolUseTest.swift in Sources */,
 				56D3309F27C5E9EE00A021A2 /* CloudDBManager.swift in Sources */,
 				56D3324A27C5F69700A021A2 /* BasicButtonViewController.swift in Sources */,
