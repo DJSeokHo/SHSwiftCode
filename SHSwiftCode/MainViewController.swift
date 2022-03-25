@@ -26,20 +26,13 @@ class MainViewController: UIViewController {
 //                SIACustomTableViewViewController.start(from: self)
                 
 //                StatusBarThemeExampleViewController.start(from: self)
-                TopNavigationBarExampleViewController.start(from: self)
+//                TopNavigationBarExampleViewController.start(from: self)
                 
-                HttpWrapper.requestGet(withUrl: "https://www.onnoffcompany.com/v1/main/keyword", success: {_ in 
-                    
-                }, fail: {_ in 
-                    
-                })
+                AsyncAndAwaitExampleViewController.start(from: self)
                 
             }, afterSeconds: 1.5)
         }
         
-      
     }
-    
-
 }
 

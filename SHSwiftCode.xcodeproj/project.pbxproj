@@ -214,6 +214,11 @@
 		56E6086127ED51530062E2D9 /* HttpWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6086027ED51530062E2D9 /* HttpWrapper.swift */; };
 		56E6086427ED51E70062E2D9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 56E6086327ED51E70062E2D9 /* Alamofire */; };
 		56E6087527ED65460062E2D9 /* JSONUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6087427ED65460062E2D9 /* JSONUtility.swift */; };
+		56E6088027ED74160062E2D9 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6087D27ED74160062E2D9 /* ToastView.swift */; };
+		56E6088127ED74160062E2D9 /* ToastView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 56E6087E27ED74160062E2D9 /* ToastView.xib */; };
+		56E6088227ED74160062E2D9 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6087F27ED74160062E2D9 /* Toast.swift */; };
+		56E6088927ED9AEE0062E2D9 /* AsyncAndAwaitExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6088827ED9AEE0062E2D9 /* AsyncAndAwaitExampleViewController.swift */; };
+		56E6088B27ED9AFC0062E2D9 /* AsyncAndAwaitExampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E6088A27ED9AFC0062E2D9 /* AsyncAndAwaitExampleViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -427,6 +432,11 @@
 		56E6085D27ED4FC00062E2D9 /* TopNavigationBarExampleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopNavigationBarExampleViewController.storyboard; sourceTree = "<group>"; };
 		56E6086027ED51530062E2D9 /* HttpWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpWrapper.swift; sourceTree = "<group>"; };
 		56E6087427ED65460062E2D9 /* JSONUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtility.swift; sourceTree = "<group>"; };
+		56E6087D27ED74160062E2D9 /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		56E6087E27ED74160062E2D9 /* ToastView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ToastView.xib; sourceTree = "<group>"; };
+		56E6087F27ED74160062E2D9 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		56E6088827ED9AEE0062E2D9 /* AsyncAndAwaitExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAndAwaitExampleViewController.swift; sourceTree = "<group>"; };
+		56E6088A27ED9AFC0062E2D9 /* AsyncAndAwaitExampleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AsyncAndAwaitExampleViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -453,6 +463,7 @@
 		56AB616227ED4383001A124E /* CommonlyUsedExample */ = {
 			isa = PBXGroup;
 			children = (
+				56E6088327ED95280062E2D9 /* AsyncAndAwait */,
 				56E6085A27ED4F860062E2D9 /* TopNavigationBar */,
 				56AB616327ED43CC001A124E /* StatusBarTheme */,
 			);
@@ -548,6 +559,7 @@
 		56D3303C27C5E97800A021A2 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				56E6087C27ED74160062E2D9 /* Toast */,
 				56E6087327ED65390062E2D9 /* JSON */,
 				56E6085F27ED51450062E2D9 /* Http */,
 				56D3303D27C5E97800A021A2 /* UserDefaults */,
@@ -1578,6 +1590,25 @@
 			path = JSON;
 			sourceTree = "<group>";
 		};
+		56E6087C27ED74160062E2D9 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+				56E6087D27ED74160062E2D9 /* ToastView.swift */,
+				56E6087E27ED74160062E2D9 /* ToastView.xib */,
+				56E6087F27ED74160062E2D9 /* Toast.swift */,
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		56E6088327ED95280062E2D9 /* AsyncAndAwait */ = {
+			isa = PBXGroup;
+			children = (
+				56E6088827ED9AEE0062E2D9 /* AsyncAndAwaitExampleViewController.swift */,
+				56E6088A27ED9AFC0062E2D9 /* AsyncAndAwaitExampleViewController.storyboard */,
+			);
+			path = AsyncAndAwait;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1668,6 +1699,7 @@
 				56D3320027C5F69700A021A2 /* BasicProgressViewController.xib in Resources */,
 				56D3322A27C5F69700A021A2 /* BasicGroupTableViewController.xib in Resources */,
 				56D3322127C5F69700A021A2 /* AutoLayoutScrollWithoutStackViewController.xib in Resources */,
+				56E6088127ED74160062E2D9 /* ToastView.xib in Resources */,
 				56D3322627C5F69700A021A2 /* AutoLayoutTestViewController.xib in Resources */,
 				56D3326C27C5F6AD00A021A2 /* SIAHelloWorld.storyboard in Resources */,
 				56D3320F27C5F69700A021A2 /* BasicDatePickerViewController.xib in Resources */,
@@ -1691,6 +1723,7 @@
 				56E6085E27ED4FC00062E2D9 /* TopNavigationBarExampleViewController.storyboard in Resources */,
 				56D3326F27C5F6AD00A021A2 /* SIAStackLayout.storyboard in Resources */,
 				56D3314B27C5F65000A021A2 /* IGLikeListCollectionViewCell.xib in Resources */,
+				56E6088B27ED9AFC0062E2D9 /* AsyncAndAwaitExampleViewController.storyboard in Resources */,
 				56D3322B27C5F69700A021A2 /* BasicTableViewController.xib in Resources */,
 				56D3309D27C5E9EE00A021A2 /* FirebaseDemoViewController.xib in Resources */,
 				56D330D227C5EA1E00A021A2 /* NavigationBarViewHolder.xib in Resources */,
@@ -1721,6 +1754,7 @@
 				56D3320327C5F69700A021A2 /* BasicAlumbImagePickerViewController.swift in Sources */,
 				56C5C00727C4D4E70004B8BD /* MainViewController.swift in Sources */,
 				56D331F827C5F69700A021A2 /* BasicImageViewController.swift in Sources */,
+				56E6088927ED9AEE0062E2D9 /* AsyncAndAwaitExampleViewController.swift in Sources */,
 				56D3306B27C5E97800A021A2 /* PermissionUtility.swift in Sources */,
 				56D3311827C5F63200A021A2 /* BasicString.swift in Sources */,
 				56D3306327C5E97800A021A2 /* AnimationUtility.swift in Sources */,
@@ -1804,6 +1838,7 @@
 				56D3309927C5E9EE00A021A2 /* ProductModel.swift in Sources */,
 				563C11C327C87A90008F079E /* RoundedTextField.swift in Sources */,
 				56D3324127C5F69700A021A2 /* BasicCustomCameraViewController.swift in Sources */,
+				56E6088027ED74160062E2D9 /* ToastView.swift in Sources */,
 				56D3321227C5F69700A021A2 /* AutoWrapContentHeightCollectionViewAdapter.swift in Sources */,
 				56D3313427C5F63200A021A2 /* Apple.swift in Sources */,
 				56D3309527C5E9EE00A021A2 /* FirebaseDemoViewController.swift in Sources */,
@@ -1829,6 +1864,7 @@
 				56D3306C27C5E97800A021A2 /* UUIDUtility.swift in Sources */,
 				56D3324727C5F69700A021A2 /* BasicSliderViewController.swift in Sources */,
 				56D3313527C5F63200A021A2 /* Person.swift in Sources */,
+				56E6088227ED74160062E2D9 /* Toast.swift in Sources */,
 				56D3309A27C5E9EE00A021A2 /* MemberModelService.swift in Sources */,
 				56D3312127C5F63200A021A2 /* SimpleClass.swift in Sources */,
 				56D3306227C5E97800A021A2 /* DateUtility.swift in Sources */,

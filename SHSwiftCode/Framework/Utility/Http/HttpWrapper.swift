@@ -8,20 +8,42 @@ import Foundation
 import Alamofire
 
 
-class HttpFileModel {
+struct HttpFileModel {
     
-    var data: Data
-    var fileName: String
-    var mimeType: String
+    let data: Data
+    let fileName: String
+    let mimeType: String
     
-    init(data: Data, fileName: String, mimeType: String) {
-        self.data = data
-        self.fileName = fileName
-        self.mimeType = mimeType
-    }
 }
 
+struct ResponseModel {
+    let data: Data? = nil
+    let error: AFError? = nil
+}
+
+
 class HttpWrapper {
+    
+    public static func requestGet(
+        withUrl url: String,
+        withHeader header: HTTPHeaders? = nil
+    ) async throws -> Data {
+     
+        try await withUnsafeThrowingContinuation { continuation in
+           
+            AF.request(url, method: .get, headers: header).validate().responseData { response in
+                if let data = response.data {
+                    continuation.resume(returning: data)
+                    return
+                }
+                if let error = response.error {
+                    continuation.resume(throwing: error)
+                    return
+                }
+                fatalError("fatal error")
+            }
+        }
+    }
     
     public static func requestGet(
         withUrl url: String,
@@ -30,11 +52,11 @@ class HttpWrapper {
         onFail fail: @escaping (_ error: AFError?) -> Void
     ) {
         AF.request(url, method: .get, headers: header).validate()
-          
+
             .responseData { response in
 
                 ILog.debug(tag: #file, content: "\(response)")
-                
+
                 switch response.result {
                     case .success(_):
                         ILog.debug(tag: #file, content: "\(url) success")
@@ -47,7 +69,6 @@ class HttpWrapper {
                 }
             }
     }
-    
    
     public static func requestPost(
         withUrl url: String,
@@ -108,7 +129,67 @@ class HttpWrapper {
                     }
                 }
         }
-       
+    }
+    
+    public static func requestPost(
+        withUrl url: String,
+        withHeader header: HTTPHeaders? = nil,
+        withFormData formData: [String: String]? = nil,
+        withFiles fileList: [HttpFileModel]? = nil
+    ) async throws -> Data {
+        
+        try await withUnsafeThrowingContinuation { continuation in
+            
+            if fileList != nil {
+                
+                AF.upload(multipartFormData: {
+                    multipartFormData in
+                    
+                    for i in 0..<fileList!.count {
+                        multipartFormData.append(fileList![i].data, withName: "files", fileName: fileList![i].fileName, mimeType: fileList![i].mimeType)
+                    }
+                    
+                    if formData != nil {
+                        for (key, value) in formData! {
+                            multipartFormData.append(value.data(using: String.Encoding.utf8)!, withName: key)
+                        }
+                    }
+                   
+                    
+                }, to: url, method: .post, headers: header).validate().responseData { response in
+
+                    if let data = response.data {
+                        continuation.resume(returning: data)
+                        return
+                    }
+                    if let error = response.error {
+                        continuation.resume(throwing: error)
+                        return
+                    }
+                    fatalError("fatal error")
+                }
+                
+            }
+            else {
+                
+                AF.request(url, method: .post, parameters: formData, headers: header).validate()
+                    .responseData {  response in
+                       
+                        if let data = response.data {
+                            continuation.resume(returning: data)
+                            return
+                        }
+                        if let error = response.error {
+                            continuation.resume(throwing: error)
+                            return
+                        }
+                        fatalError("fatal error")
+                        
+                    }
+            }
+            
+        }
+        
     }
     
     public static func requestPut(
@@ -174,6 +255,65 @@ class HttpWrapper {
         }
         
     }
+    
+    public static func requestPut(
+        withUrl url: String,
+        withHeader header: HTTPHeaders? = nil,
+        withFormData formData: [String: String]? = nil,
+        withFiles fileList: [HttpFileModel]? = nil
+    ) async throws -> Data {
+        
+        try await withUnsafeThrowingContinuation { continuation in
+            
+            if fileList != nil {
+                
+                AF.upload(multipartFormData: {
+                    multipartFormData in
+                    
+                    for i in 0..<fileList!.count {
+                        multipartFormData.append(fileList![i].data, withName: "files", fileName: fileList![i].fileName, mimeType: fileList![i].mimeType)
+                    }
+                    
+                    if formData != nil {
+                        
+                        for (key, value) in formData! {
+                            multipartFormData.append(value.data(using: String.Encoding.utf8)!, withName: key)
+                        }
+                
+                    }
+                   
+                }, to: url, method: .put, headers: header).validate().responseData { response in
+                   
+                    if let data = response.data {
+                        continuation.resume(returning: data)
+                        return
+                    }
+                    if let error = response.error {
+                        continuation.resume(throwing: error)
+                        return
+                    }
+                    fatalError("fatal error")
+                }
+                
+            }
+            else {
+                
+                AF.request(url, method: .put, parameters: formData, headers: header).validate()
+                    .responseData { response in
+                        
+                        if let data = response.data {
+                            continuation.resume(returning: data)
+                            return
+                        }
+                        if let error = response.error {
+                            continuation.resume(throwing: error)
+                            return
+                        }
+                        fatalError("fatal error")
+                    }
+            }
+        }
+    }
        
     public static func requestDelete(
         withUrl url: String,
@@ -198,5 +338,30 @@ class HttpWrapper {
                         break
                 }
             }
+    }
+    
+    public static func requestDelete(
+        withUrl url: String,
+        withHeader header: HTTPHeaders? = nil,
+        formData: [String: String]? = nil
+    ) async throws -> Data {
+        
+        try await withUnsafeThrowingContinuation { continuation in
+            
+            AF.request(url, method: .delete, parameters: formData, headers: header).validate()
+                .responseData { response in
+
+                    if let data = response.data {
+                        continuation.resume(returning: data)
+                        return
+                    }
+                    if let error = response.error {
+                        continuation.resume(throwing: error)
+                        return
+                    }
+                    fatalError("fatal error")
+                }
+        }
+        
     }
 }
