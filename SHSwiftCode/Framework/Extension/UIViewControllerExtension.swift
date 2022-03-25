@@ -13,13 +13,23 @@ extension UIViewController {
     
     public func presentUIViewController(
         target viewController: UIViewController,
+        withNavigation: Bool = false,
         withAnimated animated: Bool = true,
         withStyle style: UIModalPresentationStyle = UIModalPresentationStyle.fullScreen,
         withCompletion completion: (() -> Void)? = nil
     ) {
         
         viewController.modalPresentationStyle = style
-        self.present(viewController, animated: animated, completion: completion)
+        
+        if withNavigation {
+            let navigationController = UINavigationController(rootViewController: viewController)
+            navigationController.modalPresentationStyle = .fullScreen
+            self.present(navigationController, animated: animated, completion: completion)
+        }
+        else {
+            self.present(viewController, animated: animated, completion: completion)
+        }
+     
     }
     
     public func finish(withAnimated animated: Bool = true, withCompletion completion: (() -> Void)? = nil) {
@@ -111,6 +121,34 @@ extension UIViewController {
         view.addGestureRecognizer(tap)
     }
     
+    public func setStatusBarTheme(isDark: Bool) {
+        navigationController?.navigationBar.barStyle = isDark ? .black : .default
+    }
+    
+    public func setNavigationBarBackgroundColor(color: UIColor) {
+        navigationController?.navigationBar.backgroundColor = color
+        navigationController?.navigationBar.isTranslucent = false
+    }
+    
+    public func setNavigationBarTintColor(color: UIColor) {
+        navigationController?.navigationBar.barTintColor = color
+    }
+    
+    public func setNavigationBarTailView(image: UIImage, size: CGSize, action: Selector) {
+        
+        let button = UIButton(type: .custom)
+        button.setImage(image, for: .normal)
+        button.contentMode = .scaleAspectFit
+        
+        button.setOnClickListener(self, action: action)
+        
+        let barButtonItem = UIBarButtonItem(customView: button)
+        
+        barButtonItem.customView?.widthAnchor.constraint(equalToConstant: size.width).isActive = true
+        barButtonItem.customView?.heightAnchor.constraint(equalToConstant: size.height).isActive = true
+      
+        navigationItem.rightBarButtonItem = barButtonItem
+    }
     
 //    public func showTwoButtonWithOneInputAlertView(from: UIViewController, setTitle title: String, setMessage message: String, setInputPlaceHolder placeHolder: String, setContent content: String, setConfirmButtonTitle confirmTitle: String, setCancelButtonTitle cancelTitle: String, setConfirmDelegate confirmDelegate: @escaping (String) -> Void) {
 //        

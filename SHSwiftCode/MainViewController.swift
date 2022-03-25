@@ -20,10 +20,19 @@ class MainViewController: UIViewController {
             ThreadUtility.startUIThread(runnable: {
                 
 //                MapKitExampleViewController.start(from: self)
-                SIAHelloWorldViewController.start(from: self)
+//                SIAHelloWorldViewController.start(from: self)
 //                SIAStackLayoutViewController.start(from: self)
 //                SIATableViewViewController.start(from: self)
 //                SIACustomTableViewViewController.start(from: self)
+                
+//                StatusBarThemeExampleViewController.start(from: self)
+                TopNavigationBarExampleViewController.start(from: self)
+                
+                HttpWrapper.requestGet(withUrl: "https://www.onnoffcompany.com/v1/main/keyword", success: {_ in 
+                    
+                }, fail: {_ in 
+                    
+                })
                 
             }, afterSeconds: 1.5)
         }

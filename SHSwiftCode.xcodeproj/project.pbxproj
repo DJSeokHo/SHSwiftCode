@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		563C11C327C87A90008F079E /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C11C227C87A90008F079E /* RoundedTextField.swift */; };
 		563C11CB27C8CD9C008F079E /* SystemPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563C11CA27C8CD9C008F079E /* SystemPhotoPicker.swift */; };
+		56AB616D27ED4772001A124E /* StatusBarThemeExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56AB616C27ED4772001A124E /* StatusBarThemeExampleViewController.swift */; };
+		56AB616F27ED477E001A124E /* StatusBarThemeExampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56AB616E27ED477E001A124E /* StatusBarThemeExampleViewController.storyboard */; };
 		56C5303A27CF532200EA7C39 /* FoodPin.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56C5303827CF532200EA7C39 /* FoodPin.xcdatamodeld */; };
 		56C5C00327C4D4E70004B8BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C5C00227C4D4E70004B8BD /* AppDelegate.swift */; };
 		56C5C00527C4D4E70004B8BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C5C00427C4D4E70004B8BD /* SceneDelegate.swift */; };
@@ -207,11 +209,17 @@
 		56D3327027C5F6AD00A021A2 /* SIAStackLayoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56D3325727C5F6AD00A021A2 /* SIAStackLayoutViewController.swift */; };
 		56D3328327C602BC00A021A2 /* Nunito-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56D3328127C6023F00A021A2 /* Nunito-Bold.ttf */; };
 		56D3328427C602BC00A021A2 /* Nunito-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 56D3328227C6023F00A021A2 /* Nunito-Regular.ttf */; };
+		56E6085C27ED4FBA0062E2D9 /* TopNavigationBarExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6085B27ED4FBA0062E2D9 /* TopNavigationBarExampleViewController.swift */; };
+		56E6085E27ED4FC00062E2D9 /* TopNavigationBarExampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E6085D27ED4FC00062E2D9 /* TopNavigationBarExampleViewController.storyboard */; };
+		56E6086127ED51530062E2D9 /* HttpWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6086027ED51530062E2D9 /* HttpWrapper.swift */; };
+		56E6086427ED51E70062E2D9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 56E6086327ED51E70062E2D9 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		563C11C227C87A90008F079E /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		563C11CA27C8CD9C008F079E /* SystemPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemPhotoPicker.swift; sourceTree = "<group>"; };
+		56AB616C27ED4772001A124E /* StatusBarThemeExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarThemeExampleViewController.swift; sourceTree = "<group>"; };
+		56AB616E27ED477E001A124E /* StatusBarThemeExampleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StatusBarThemeExampleViewController.storyboard; sourceTree = "<group>"; };
 		56C5303927CF532200EA7C39 /* FoodPin.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FoodPin.xcdatamodel; sourceTree = "<group>"; };
 		56C5BFFF27C4D4E70004B8BD /* SHSwiftCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SHSwiftCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56C5C00227C4D4E70004B8BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -414,6 +422,9 @@
 		56D3325727C5F6AD00A021A2 /* SIAStackLayoutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SIAStackLayoutViewController.swift; sourceTree = "<group>"; };
 		56D3328127C6023F00A021A2 /* Nunito-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Bold.ttf"; sourceTree = "<group>"; };
 		56D3328227C6023F00A021A2 /* Nunito-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Nunito-Regular.ttf"; sourceTree = "<group>"; };
+		56E6085B27ED4FBA0062E2D9 /* TopNavigationBarExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationBarExampleViewController.swift; sourceTree = "<group>"; };
+		56E6085D27ED4FC00062E2D9 /* TopNavigationBarExampleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopNavigationBarExampleViewController.storyboard; sourceTree = "<group>"; };
+		56E6086027ED51530062E2D9 /* HttpWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpWrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -422,6 +433,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				56C5C01E27C4D7090004B8BD /* MapKit.framework in Frameworks */,
+				56E6086427ED51E70062E2D9 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,6 +446,24 @@
 				563C11C227C87A90008F079E /* RoundedTextField.swift */,
 			);
 			path = CustomView;
+			sourceTree = "<group>";
+		};
+		56AB616227ED4383001A124E /* CommonlyUsedExample */ = {
+			isa = PBXGroup;
+			children = (
+				56E6085A27ED4F860062E2D9 /* TopNavigationBar */,
+				56AB616327ED43CC001A124E /* StatusBarTheme */,
+			);
+			path = CommonlyUsedExample;
+			sourceTree = "<group>";
+		};
+		56AB616327ED43CC001A124E /* StatusBarTheme */ = {
+			isa = PBXGroup;
+			children = (
+				56AB616C27ED4772001A124E /* StatusBarThemeExampleViewController.swift */,
+				56AB616E27ED477E001A124E /* StatusBarThemeExampleViewController.storyboard */,
+			);
+			path = StatusBarTheme;
 			sourceTree = "<group>";
 		};
 		56C5BFF627C4D4E70004B8BD = {
@@ -505,6 +535,7 @@
 		56D32F4527C5DE8400A021A2 /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				56AB616227ED4383001A124E /* CommonlyUsedExample */,
 				56D3324E27C5F6AD00A021A2 /* SwiftInAction */,
 				56D3316027C5F67600A021A2 /* Basic */,
 				56C5C01627C4D5790004B8BD /* MapKitExample */,
@@ -515,6 +546,7 @@
 		56D3303C27C5E97800A021A2 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				56E6085F27ED51450062E2D9 /* Http */,
 				56D3303D27C5E97800A021A2 /* UserDefaults */,
 				56D3303F27C5E97800A021A2 /* Storyboard */,
 				56D3304127C5E97800A021A2 /* Color */,
@@ -1518,6 +1550,23 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		56E6085A27ED4F860062E2D9 /* TopNavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				56E6085B27ED4FBA0062E2D9 /* TopNavigationBarExampleViewController.swift */,
+				56E6085D27ED4FC00062E2D9 /* TopNavigationBarExampleViewController.storyboard */,
+			);
+			path = TopNavigationBar;
+			sourceTree = "<group>";
+		};
+		56E6085F27ED51450062E2D9 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				56E6086027ED51530062E2D9 /* HttpWrapper.swift */,
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1534,6 +1583,9 @@
 			dependencies = (
 			);
 			name = SHSwiftCode;
+			packageProductDependencies = (
+				56E6086327ED51E70062E2D9 /* Alamofire */,
+			);
 			productName = SHSwiftCode;
 			productReference = 56C5BFFF27C4D4E70004B8BD /* SHSwiftCode.app */;
 			productType = "com.apple.product-type.application";
@@ -1562,6 +1614,9 @@
 				Base,
 			);
 			mainGroup = 56C5BFF627C4D4E70004B8BD;
+			packageReferences = (
+				56E6086227ED51E70062E2D9 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 56C5C00027C4D4E70004B8BD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -1614,6 +1669,7 @@
 				56D3320727C5F69700A021A2 /* NavigationRootViewController.xib in Resources */,
 				56D3321C27C5F69700A021A2 /* StackInScrollViewController.xib in Resources */,
 				56D331FA27C5F69700A021A2 /* BasicSwitchViewController.xib in Resources */,
+				56AB616F27ED477E001A124E /* StatusBarThemeExampleViewController.storyboard in Resources */,
 				56D3323027C5F69700A021A2 /* BasicPageViewController.xib in Resources */,
 				56D3324827C5F69700A021A2 /* BasicSliderViewController.xib in Resources */,
 				56D3324227C5F69700A021A2 /* BasicCustomCameraViewController.xib in Resources */,
@@ -1621,6 +1677,7 @@
 				56D3322F27C5F69700A021A2 /* BasicAlertViewController.xib in Resources */,
 				56D3324027C5F69700A021A2 /* BasucCapturedPictureViewController.xib in Resources */,
 				56D331FC27C5F69700A021A2 /* BasicTextViewViewController.xib in Resources */,
+				56E6085E27ED4FC00062E2D9 /* TopNavigationBarExampleViewController.storyboard in Resources */,
 				56D3326F27C5F6AD00A021A2 /* SIAStackLayout.storyboard in Resources */,
 				56D3314B27C5F65000A021A2 /* IGLikeListCollectionViewCell.xib in Resources */,
 				56D3322B27C5F69700A021A2 /* BasicTableViewController.xib in Resources */,
@@ -1657,6 +1714,7 @@
 				56D3311827C5F63200A021A2 /* BasicString.swift in Sources */,
 				56D3306327C5E97800A021A2 /* AnimationUtility.swift in Sources */,
 				56D3320E27C5F69700A021A2 /* BasicDatePickerViewController.swift in Sources */,
+				56E6086127ED51530062E2D9 /* HttpWrapper.swift in Sources */,
 				56D3322327C5F69700A021A2 /* DynamicStackViewViewController.swift in Sources */,
 				56D3314E27C5F65000A021A2 /* IGLikeCollectionViewCell.swift in Sources */,
 				56D331F427C5F69700A021A2 /* BasicStepperViewController.swift in Sources */,
@@ -1672,6 +1730,7 @@
 				56D3315127C5F65000A021A2 /* IGLikeCollectionView.swift in Sources */,
 				56C5C00327C4D4E70004B8BD /* AppDelegate.swift in Sources */,
 				56D3323F27C5F69700A021A2 /* BasucCapturedPictureViewController.swift in Sources */,
+				56E6085C27ED4FBA0062E2D9 /* TopNavigationBarExampleViewController.swift in Sources */,
 				56D3321A27C5F69700A021A2 /* CALItemCollectionViewCell.swift in Sources */,
 				56D3307827C5E9E200A021A2 /* UIViewExtension.swift in Sources */,
 				56D3313027C5F63200A021A2 /* Rect.swift in Sources */,
@@ -1737,6 +1796,7 @@
 				56D3313427C5F63200A021A2 /* Apple.swift in Sources */,
 				56D3309527C5E9EE00A021A2 /* FirebaseDemoViewController.swift in Sources */,
 				56D3324B27C5F69700A021A2 /* BasicSearchViewController.swift in Sources */,
+				56AB616D27ED4772001A124E /* StatusBarThemeExampleViewController.swift in Sources */,
 				56D3312927C5F63200A021A2 /* AppleEatable.swift in Sources */,
 				56D331FF27C5F69700A021A2 /* BasicProgressViewController.swift in Sources */,
 				56D3311927C5F63200A021A2 /* BasicFunction.swift in Sources */,
@@ -2004,6 +2064,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		56E6086227ED51E70062E2D9 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		56E6086327ED51E70062E2D9 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 56E6086227ED51E70062E2D9 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		56C5303827CF532200EA7C39 /* FoodPin.xcdatamodeld */ = {
