@@ -213,6 +213,7 @@
 		56E6085E27ED4FC00062E2D9 /* TopNavigationBarExampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E6085D27ED4FC00062E2D9 /* TopNavigationBarExampleViewController.storyboard */; };
 		56E6086127ED51530062E2D9 /* HttpWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6086027ED51530062E2D9 /* HttpWrapper.swift */; };
 		56E6086427ED51E70062E2D9 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 56E6086327ED51E70062E2D9 /* Alamofire */; };
+		56E6087527ED65460062E2D9 /* JSONUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6087427ED65460062E2D9 /* JSONUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -425,6 +426,7 @@
 		56E6085B27ED4FBA0062E2D9 /* TopNavigationBarExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationBarExampleViewController.swift; sourceTree = "<group>"; };
 		56E6085D27ED4FC00062E2D9 /* TopNavigationBarExampleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TopNavigationBarExampleViewController.storyboard; sourceTree = "<group>"; };
 		56E6086027ED51530062E2D9 /* HttpWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpWrapper.swift; sourceTree = "<group>"; };
+		56E6087427ED65460062E2D9 /* JSONUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -546,6 +548,7 @@
 		56D3303C27C5E97800A021A2 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				56E6087327ED65390062E2D9 /* JSON */,
 				56E6085F27ED51450062E2D9 /* Http */,
 				56D3303D27C5E97800A021A2 /* UserDefaults */,
 				56D3303F27C5E97800A021A2 /* Storyboard */,
@@ -1567,6 +1570,14 @@
 			path = Http;
 			sourceTree = "<group>";
 		};
+		56E6087327ED65390062E2D9 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				56E6087427ED65460062E2D9 /* JSONUtility.swift */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1723,6 +1734,7 @@
 				56D330A227C5E9EE00A021A2 /* LocationWrapper.swift in Sources */,
 				56D3320627C5F69700A021A2 /* NavigationRootViewController.swift in Sources */,
 				56D330A327C5E9EE00A021A2 /* AutoLayoutManager.swift in Sources */,
+				56E6087527ED65460062E2D9 /* JSONUtility.swift in Sources */,
 				56D3320B27C5F69700A021A2 /* SecondViewController.swift in Sources */,
 				56D331F227C5F69700A021A2 /* BasicUIViewController.swift in Sources */,
 				56D3322C27C5F69700A021A2 /* BasicTableViewController.swift in Sources */,
