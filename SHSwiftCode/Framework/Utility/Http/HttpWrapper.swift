@@ -31,12 +31,20 @@ class HttpWrapper {
      
         try await withUnsafeThrowingContinuation { continuation in
            
+            ILog.debug(tag: #file, content: "requestGet start \(Thread.current)")
+            
             AF.request(url, method: .get, headers: header).validate().responseData { response in
                 if let data = response.data {
+                    
+                    ILog.debug(tag: #file, content: "requestGet response data \(Thread.current)")
+                    
                     continuation.resume(returning: data)
                     return
                 }
                 if let error = response.error {
+                    
+                    ILog.debug(tag: #file, content: "requestGet response error \(Thread.current)")
+                    
                     continuation.resume(throwing: error)
                     return
                 }

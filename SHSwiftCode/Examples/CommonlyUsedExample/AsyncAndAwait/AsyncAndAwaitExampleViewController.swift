@@ -24,8 +24,39 @@ class AsyncAndAwaitExampleViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+//        getTest()
+//        ThreadTest.test()
+        
+//        Task {
+//            let result = await AsyncAwaitStaticTest.test()
+//            Toast.instance.showShortTimeToast(content: "Async Await Test")
+//
+//            ILog.debug(tag: #file, content: result)
+//            ILog.debug(tag: #file, content: "finish \(Thread.current)")
+//        }
+        
         Task {
-            
+            let result = await AsyncAwaitObjectTest().test()
+            Toast.instance.showShortTimeToast(content: "Async Await Test")
+
+            ILog.debug(tag: #file, content: result)
+            ILog.debug(tag: #file, content: "finish \(Thread.current)")
+        }
+        
+//        Task {
+//            let result = await test()
+//            Toast.instance.showShortTimeToast(content: "Async Await Test")
+//
+//            ILog.debug(tag: #file, content: result)
+//            ILog.debug(tag: #file, content: "finish \(Thread.current)")
+//
+//        }
+       
+    }
+    
+    func getTest() {
+        
+        Task {
             ILog.debug(tag: #file, content: "start \(Thread.current)")
             
             let result = await GetTestService.GetTest()
@@ -34,8 +65,9 @@ class AsyncAndAwaitExampleViewController: UIViewController {
             
             Toast.instance.showShortTimeToast(content: "result \(String(describing: result))")
         }
-        
+  
     }
+    
     
     @IBAction func onButtonClick(_ sender: Any) {
         
@@ -61,7 +93,169 @@ class AsyncAndAwaitExampleViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+}
 
+/*
+ MARK: Global functions
+ */
+func getFileNames() async -> [String] {
+    // Use GCD to simulate asnyc background work
+    ILog.debug(tag: #file, content: "getFileNames \(Thread.current)")
+    sleep(3)
+    return ["Doc1.txt", "Doc2.txt", "Doc3.txt"]
+}
+
+func getFileContent(for files: [String]) async -> String {
+    ILog.debug(tag: #file, content: "getFileContent \(Thread.current)")
+    sleep(2)
+    return files.joined(separator: "\n")
+}
+
+func test() async -> String {
+    
+    ILog.debug(tag: #file, content: "test \(Thread.current)")
+    
+    let fileNames = await getFileNames()
+    let content = await getFileContent(for: fileNames)
+    
+    sleep(3)
+    
+    return content
+}
+/*
+ MARK: Global functions
+ */
+
+
+class AsyncAwaitSingletonTest {
+    
+    public static let instance = AsyncAwaitSingletonTest()
+    
+    private init() {}
+    
+    func getFileNames() async -> [String] {
+        // Use GCD to simulate asnyc background work
+        ILog.debug(tag: #file, content: "getFileNames \(Thread.current)")
+        sleep(3)
+        return ["Doc1.txt", "Doc2.txt", "Doc3.txt"]
+    }
+
+    func getFileContent(for files: [String]) async -> String {
+        ILog.debug(tag: #file, content: "getFileContent \(Thread.current)")
+        sleep(2)
+        return files.joined(separator: "\n")
+    }
+
+    func test() async -> String {
+        
+        ILog.debug(tag: #file, content: "test \(Thread.current)")
+        
+        let fileNames = await getFileNames()
+        let content = await getFileContent(for: fileNames)
+        
+        sleep(3)
+        
+        return content
+    }
+}
+
+class AsyncAwaitObjectTest {
+    // blocking main thread
+
+    func getFileNames() async -> [String] {
+        // Use GCD to simulate asnyc background work
+        ILog.debug(tag: #file, content: "getFileNames \(Thread.current)")
+        sleep(3)
+        return ["Doc1.txt", "Doc2.txt", "Doc3.txt"]
+    }
+
+    func getFileContent(for files: [String]) async -> String {
+        ILog.debug(tag: #file, content: "getFileContent \(Thread.current)")
+        sleep(2)
+        return files.joined(separator: "\n")
+    }
+
+    func test() async -> String {
+        
+        ILog.debug(tag: #file, content: "test \(Thread.current)")
+        
+        let fileNames = await getFileNames()
+        let content = await getFileContent(for: fileNames)
+        
+        sleep(3)
+        
+        return content
+    }
+}
+
+class AsyncAwaitStaticTest {
+    // no blocking main thread
+    
+    static func getFileNames() async -> [String] {
+        // Use GCD to simulate asnyc background work
+        ILog.debug(tag: #file, content: "getFileNames \(Thread.current)")
+        sleep(3)
+        return ["Doc1.txt", "Doc2.txt", "Doc3.txt"]
+    }
+
+    static func getFileContent(for files: [String]) async -> String {
+        ILog.debug(tag: #file, content: "getFileContent \(Thread.current)")
+        sleep(2)
+        return files.joined(separator: "\n")
+    }
+
+    static func test() async -> String {
+        
+        ILog.debug(tag: #file, content: "test \(Thread.current)")
+        
+        let fileNames = await getFileNames()
+        let content = await getFileContent(for: fileNames)
+        
+        sleep(3)
+        
+        return content
+    }
+}
+
+class ThreadTest {
+    
+    public static func test() {
+        ThreadTest.instance.test()
+    }
+    
+    public static let instance = ThreadTest()
+    
+    private init() {}
+    
+    func getFileNames() -> [String] {
+        // Use GCD to simulate asnyc background work
+        ILog.debug(tag: #file, content: "getFileNames \(Thread.current)")
+        sleep(3)
+        return ["Doc1.txt", "Doc2.txt", "Doc3.txt"]
+    }
+
+    func getFileContent(for files: [String]) -> String {
+        ILog.debug(tag: #file, content: "getFileContent \(Thread.current)")
+        sleep(2)
+        return files.joined(separator: "\n")
+    }
+
+    func test() {
+        
+        ILog.debug(tag: #file, content: "test \(Thread.current)")
+        DispatchQueue.global().async {
+            
+            let fileNames = self.getFileNames()
+            
+            let fileContent = self.getFileContent(for: fileNames)
+            
+            DispatchQueue.main.async {
+                ILog.debug(tag: #file, content: fileContent)
+                ILog.debug(tag: #file, content: "finish \(Thread.current)")
+            }
+        }
+    }
+    
 }
 
 class GetTestService {

@@ -18,9 +18,7 @@ class ThreadUtility {
     
     public static func startUIThread(runnable: @escaping () -> Void, afterSeconds seconds: Double) {
         
-        Thread.sleep(forTimeInterval: seconds)
-        
-        DispatchQueue.main.async {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + seconds) {
             runnable()
         }
     }
