@@ -9,7 +9,25 @@
 import Foundation
 import UIKit
 
-extension UIViewController {
+extension UIViewController: UIGestureRecognizerDelegate {
+    
+    /**
+     swipe to pop will be disable when we set the left navigation item.
+     so, we need this.
+     */
+    /*
+     MARK: set swipe to pop gesture
+     */
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy otherGestureRecognizer: UIGestureRecognizer) -> Bool {
+        return true
+    }
+    /*
+     MARK: enable swipe to pop
+     */
+    public func enableSwipeToPop() {
+        navigationController?.interactivePopGestureRecognizer?.delegate = self
+        navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+    }
     
     public func presentUIViewController(
         target viewController: UIViewController,
@@ -115,6 +133,10 @@ extension UIViewController {
         navigationController?.setNavigationBarHidden(false, animated: false)
     }
     
+    public func getNavigationBarAndStatusBarHeight() -> CGFloat {
+        return (navigationController?.navigationBar.frame.size.height ?? 0) + DisplayUtility.getStatusBarHeight()
+    }
+    
     public func tapSpaceToEndEditing() {
         let tap = UITapGestureRecognizer(target: view, action: #selector(UIView.endEditing))
         tap.cancelsTouchesInView = false
@@ -134,7 +156,38 @@ extension UIViewController {
         navigationController?.navigationBar.barTintColor = color
     }
     
-    public func setNavigationBarTailView(image: UIImage, size: CGSize, action: Selector) {
+    public func setNavigationBarCenterView(title: String, color: UIColor? = nil) {
+        
+        navigationItem.titleView = nil
+        
+        let label = UILabel()
+        label.text = title
+        label.font = UIFont.systemFont(ofSize: 17)
+        
+        if color != nil {
+            label.textColor = color!
+        }
+     
+        navigationItem.titleView = label
+    }
+    
+    public func setNavigationBarLeadingView(image: UIImage, size: CGSize, action: Selector) {
+        
+        let button = UIButton(type: .custom)
+        button.setImage(image, for: .normal)
+        button.contentMode = .scaleAspectFit
+        
+        button.setOnClickListener(self, action: action)
+        
+        let barButtonItem = UIBarButtonItem(customView: button)
+        
+        barButtonItem.customView?.widthAnchor.constraint(equalToConstant: size.width).isActive = true
+        barButtonItem.customView?.heightAnchor.constraint(equalToConstant: size.height).isActive = true
+      
+        navigationItem.leftBarButtonItem = barButtonItem
+    }
+
+    public func setNavigationBarTrailingView(image: UIImage, size: CGSize, action: Selector) {
         
         let button = UIButton(type: .custom)
         button.setImage(image, for: .normal)

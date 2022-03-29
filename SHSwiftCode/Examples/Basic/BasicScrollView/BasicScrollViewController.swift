@@ -8,12 +8,16 @@
 
 import UIKit
 
+/**
+ scroll view 4个 边固定
+ 加入 1个 UIView 作为 Content View
+ Content View的4个边固定在ScrollView的ContentLayoutGuide上，值为0
+ Content View的宽和ScrollView的FrameLayoutGuide一致
+ Content View的高设置好
+ Done
+ */
 class BasicScrollViewController: UIViewController {
 
-    
-    @IBOutlet var scrollView: UIScrollView!
-    @IBOutlet var contentView: UIView!
-    
     @IBAction func onButtonCloseClick(_ sender: UIButton) {
         
         finish()
@@ -25,10 +29,6 @@ class BasicScrollViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        scrollView.contentSize = CGSize(width: contentView.frame.size.width, height: contentView.frame.size.height)
-        
-        
-        scrollView.addSubview(contentView)
     }
     
     override func viewWillAppear(_ animated: Bool) {

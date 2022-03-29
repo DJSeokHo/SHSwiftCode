@@ -219,6 +219,9 @@
 		56E6088227ED74160062E2D9 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6087F27ED74160062E2D9 /* Toast.swift */; };
 		56E6088927ED9AEE0062E2D9 /* AsyncAndAwaitExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6088827ED9AEE0062E2D9 /* AsyncAndAwaitExampleViewController.swift */; };
 		56E6088B27ED9AFC0062E2D9 /* AsyncAndAwaitExampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E6088A27ED9AFC0062E2D9 /* AsyncAndAwaitExampleViewController.storyboard */; };
+		56F94FCD27F29D1600B9D4F2 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F94FCC27F29D1600B9D4F2 /* WebViewViewController.swift */; };
+		56F94FCF27F29D1E00B9D4F2 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F94FCE27F29D1E00B9D4F2 /* WebView.storyboard */; };
+		56F94FD227F29DDD00B9D4F2 /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F94FD127F29DDD00B9D4F2 /* CommonUtility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -437,6 +440,9 @@
 		56E6087F27ED74160062E2D9 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		56E6088827ED9AEE0062E2D9 /* AsyncAndAwaitExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAndAwaitExampleViewController.swift; sourceTree = "<group>"; };
 		56E6088A27ED9AFC0062E2D9 /* AsyncAndAwaitExampleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AsyncAndAwaitExampleViewController.storyboard; sourceTree = "<group>"; };
+		56F94FCC27F29D1600B9D4F2 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		56F94FCE27F29D1E00B9D4F2 /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
+		56F94FD127F29DDD00B9D4F2 /* CommonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -536,6 +542,7 @@
 		56D32F0027C5D47100A021A2 /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				56F94FCB27F29CFA00B9D4F2 /* WebView */,
 				563C11C027C87A63008F079E /* CustomView */,
 				56D3307A27C5E9EE00A021A2 /* Firebase */,
 				56D3308B27C5E9EE00A021A2 /* Modules */,
@@ -559,6 +566,7 @@
 		56D3303C27C5E97800A021A2 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
+				56F94FD027F29DD100B9D4F2 /* Common */,
 				56E6087C27ED74160062E2D9 /* Toast */,
 				56E6087327ED65390062E2D9 /* JSON */,
 				56E6085F27ED51450062E2D9 /* Http */,
@@ -1609,6 +1617,23 @@
 			path = AsyncAndAwait;
 			sourceTree = "<group>";
 		};
+		56F94FCB27F29CFA00B9D4F2 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				56F94FCC27F29D1600B9D4F2 /* WebViewViewController.swift */,
+				56F94FCE27F29D1E00B9D4F2 /* WebView.storyboard */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		56F94FD027F29DD100B9D4F2 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				56F94FD127F29DDD00B9D4F2 /* CommonUtility.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1725,6 +1750,7 @@
 				56D3314B27C5F65000A021A2 /* IGLikeListCollectionViewCell.xib in Resources */,
 				56E6088B27ED9AFC0062E2D9 /* AsyncAndAwaitExampleViewController.storyboard in Resources */,
 				56D3322B27C5F69700A021A2 /* BasicTableViewController.xib in Resources */,
+				56F94FCF27F29D1E00B9D4F2 /* WebView.storyboard in Resources */,
 				56D3309D27C5E9EE00A021A2 /* FirebaseDemoViewController.xib in Resources */,
 				56D330D227C5EA1E00A021A2 /* NavigationBarViewHolder.xib in Resources */,
 				56D3324627C5F69700A021A2 /* DataViewController.xib in Resources */,
@@ -1751,6 +1777,7 @@
 				56D3312327C5F63200A021A2 /* ExampleProtocol.swift in Sources */,
 				56D3324527C5F69700A021A2 /* DataViewController.swift in Sources */,
 				56D3305F27C5E97800A021A2 /* UserDefaultsUtility.swift in Sources */,
+				56F94FCD27F29D1600B9D4F2 /* WebViewViewController.swift in Sources */,
 				56D3320327C5F69700A021A2 /* BasicAlumbImagePickerViewController.swift in Sources */,
 				56C5C00727C4D4E70004B8BD /* MainViewController.swift in Sources */,
 				56D331F827C5F69700A021A2 /* BasicImageViewController.swift in Sources */,
@@ -1855,6 +1882,7 @@
 				56D3309B27C5E9EE00A021A2 /* ProductModelService.swift in Sources */,
 				56D3323127C5F69700A021A2 /* BasicPageViewController.swift in Sources */,
 				56D3306827C5E97800A021A2 /* NotificationConstants.swift in Sources */,
+				56F94FD227F29DDD00B9D4F2 /* CommonUtility.swift in Sources */,
 				56D3309727C5E9EE00A021A2 /* MemberSelfModel.swift in Sources */,
 				56D3306127C5E97800A021A2 /* ColorUtility.swift in Sources */,
 				56D3321127C5F69700A021A2 /* AutoWrapContentHeightCollectionViewController.swift in Sources */,

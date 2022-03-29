@@ -15,4 +15,17 @@ class DisplayUtility {
         return UIScreen.main.bounds.size
     }
     
+    public static func getStatusBarHeight() -> CGFloat {
+        var statusBarHeight: CGFloat = 0
+        if #available(iOS 13.0, *) {
+            if let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) {
+              statusBarHeight = window.windowScene?.statusBarManager?.statusBarFrame.height ?? 0
+
+            }
+        }
+        else {
+            statusBarHeight = UIApplication.shared.statusBarFrame.height
+        }
+        return statusBarHeight
+    }
 }
