@@ -15,4 +15,7 @@ extension UIButton {
         self.contentEdgeInsets = UIEdgeInsets(top: top, left: left, bottom: bottom, right: right)
     }
     
+    public func setOnClickListener(_ target: Any?, action: Selector) {
+        self.addTarget(target, action: action, for: .touchUpInside)
+    }
 }

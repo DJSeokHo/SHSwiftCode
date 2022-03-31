@@ -44,7 +44,7 @@ class CALItemCollectionViewCell: UICollectionViewCell {
         contentLC = AutoLayoutManager.instance.createLayoutConstraintHeight(view: viewContent)
         labelLC = AutoLayoutManager.instance.createLayoutConstraintHeight(view: label)
         
-        viewContent.setOnClickListener(self, action: #selector(onItemClick))
+        viewContent.setOnTouchListener(self, action: #selector(onItemClick))
         
         button.addTarget(self, action: #selector(onButtonClick), for: .touchUpInside)
             

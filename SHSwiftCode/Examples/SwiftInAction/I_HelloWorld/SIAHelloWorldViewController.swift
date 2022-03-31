@@ -37,7 +37,7 @@ class SIAHelloWorldViewController: UIViewController {
     
     private func setListener() {
         
-        buttonHelloWorld.setOnClickListener(self, action: #selector(onButtonHelloWorldClick))
+        buttonHelloWorld.setOnTouchListener(self, action: #selector(onButtonHelloWorldClick))
     }
     
     @objc private func onButtonHelloWorldClick() {

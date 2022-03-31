@@ -11,7 +11,7 @@ import UIKit
 
 extension UIView {
     
-    public func setOnClickListener(_ target: Any?, action: Selector) {
+    public func setOnTouchListener(_ target: Any?, action: Selector) {
 
         self.isUserInteractionEnabled = true
         let guestureRecognizer = UITapGestureRecognizer(target: target, action: action)

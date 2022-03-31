@@ -147,9 +147,27 @@ extension UIViewController: UIGestureRecognizerDelegate {
         navigationController?.navigationBar.barStyle = isDark ? .black : .default
     }
     
-    public func setNavigationBarBackgroundColor(color: UIColor) {
-        navigationController?.navigationBar.backgroundColor = color
-        navigationController?.navigationBar.isTranslucent = false
+    /**
+     要自訂導覽列，首先需要先取得目前的 UINavigationBarAppearance 物件。standard Appearance 屬性包含了目前標準大小導覽列的外觀設定。下一步是修改 appearance 物件的屬性，並應用我們自訂的內容。configureWithTransparentBackground() 函數設置導覽列為透明背景與無陰影。
+     欲變更導覽列標題的顏色與字型，可修改 titleTextAttributes 與 largeTitleTextAttributes 屬性。這兩個屬性接收一組鍵/ 值格式的屬性。titleTextAttributes 設計為標準尺寸的標題，而 largeTitleTextAttributes 屬性則用於顯示大尺寸標題。在上述的程式中，我們修改字型顏色與實施自訂的字型。
+
+     即使我們完成了 appearance 物件的修改，自訂的結果不會立即應用於導覽列，你必須指定物件至standardAppearance、 compactAppearance 與 scrollEdgeAppearance 屬性，每一個屬性負責導覽列於不同狀態的外觀。standardAppearance 屬性儲存標準尺寸導覽列的設定，compactAppearance 的設定控制小尺寸導覽列的外觀，scrollEdgeAppearance 則為滾動內容滾到導覽列邊緣時的外觀設定。
+     */
+    public func setNavigationBar(textColor: UIColor, backgroundColor: UIColor) {
+        
+        if let appearance = navigationController?.navigationBar.standardAppearance {
+
+            appearance.configureWithTransparentBackground()
+
+            appearance.titleTextAttributes = [.foregroundColor: textColor]
+            appearance.largeTitleTextAttributes = [.foregroundColor: textColor]
+            appearance.backgroundColor = backgroundColor
+
+            navigationController?.navigationBar.standardAppearance = appearance
+            navigationController?.navigationBar.compactAppearance = appearance
+            navigationController?.navigationBar.scrollEdgeAppearance = appearance
+        }
+        
     }
     
     public func setNavigationBarTintColor(color: UIColor) {
@@ -177,7 +195,7 @@ extension UIViewController: UIGestureRecognizerDelegate {
         button.setImage(image, for: .normal)
         button.contentMode = .scaleAspectFit
         
-        button.setOnClickListener(self, action: action)
+        button.setOnTouchListener(self, action: action)
         
         let barButtonItem = UIBarButtonItem(customView: button)
         
@@ -193,7 +211,7 @@ extension UIViewController: UIGestureRecognizerDelegate {
         button.setImage(image, for: .normal)
         button.contentMode = .scaleAspectFit
         
-        button.setOnClickListener(self, action: action)
+        button.setOnTouchListener(self, action: action)
         
         let barButtonItem = UIBarButtonItem(customView: button)
         

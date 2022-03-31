@@ -219,6 +219,7 @@
 		56E6088227ED74160062E2D9 /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6087F27ED74160062E2D9 /* Toast.swift */; };
 		56E6088927ED9AEE0062E2D9 /* AsyncAndAwaitExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E6088827ED9AEE0062E2D9 /* AsyncAndAwaitExampleViewController.swift */; };
 		56E6088B27ED9AFC0062E2D9 /* AsyncAndAwaitExampleViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56E6088A27ED9AFC0062E2D9 /* AsyncAndAwaitExampleViewController.storyboard */; };
+		56E7D60627F5727B00CAAA28 /* UIScrollViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56E7D60527F5727B00CAAA28 /* UIScrollViewExtension.swift */; };
 		56F94FCD27F29D1600B9D4F2 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F94FCC27F29D1600B9D4F2 /* WebViewViewController.swift */; };
 		56F94FCF27F29D1E00B9D4F2 /* WebView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56F94FCE27F29D1E00B9D4F2 /* WebView.storyboard */; };
 		56F94FD227F29DDD00B9D4F2 /* CommonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56F94FD127F29DDD00B9D4F2 /* CommonUtility.swift */; };
@@ -440,6 +441,7 @@
 		56E6087F27ED74160062E2D9 /* Toast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
 		56E6088827ED9AEE0062E2D9 /* AsyncAndAwaitExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncAndAwaitExampleViewController.swift; sourceTree = "<group>"; };
 		56E6088A27ED9AFC0062E2D9 /* AsyncAndAwaitExampleViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AsyncAndAwaitExampleViewController.storyboard; sourceTree = "<group>"; };
+		56E7D60527F5727B00CAAA28 /* UIScrollViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIScrollViewExtension.swift; sourceTree = "<group>"; };
 		56F94FCC27F29D1600B9D4F2 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		56F94FCE27F29D1E00B9D4F2 /* WebView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WebView.storyboard; sourceTree = "<group>"; };
 		56F94FD127F29DDD00B9D4F2 /* CommonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtility.swift; sourceTree = "<group>"; };
@@ -709,6 +711,7 @@
 				56D3307227C5E9E200A021A2 /* UIViewControllerExtension.swift */,
 				56D3307327C5E9E200A021A2 /* UIViewExtension.swift */,
 				56D3307427C5E9E200A021A2 /* StringExtension.swift */,
+				56E7D60527F5727B00CAAA28 /* UIScrollViewExtension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -1915,6 +1918,7 @@
 				56D331EE27C5F69700A021A2 /* BasicCollectionViewController.swift in Sources */,
 				56D3312627C5F63200A021A2 /* BasicGrammar.swift in Sources */,
 				56D3312F27C5F63200A021A2 /* Dog.swift in Sources */,
+				56E7D60627F5727B00CAAA28 /* UIScrollViewExtension.swift in Sources */,
 				56D3309C27C5E9EE00A021A2 /* ShopModelService.swift in Sources */,
 				56D3323B27C5F69700A021A2 /* SQLiteDemoViewController.swift in Sources */,
 				56D3323227C5F69700A021A2 /* MealsViewController.swift in Sources */,
