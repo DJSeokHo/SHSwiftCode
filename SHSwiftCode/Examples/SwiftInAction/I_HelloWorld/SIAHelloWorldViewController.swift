@@ -26,13 +26,15 @@ class SIAHelloWorldViewController: UIViewController {
     
   
     @IBOutlet var buttonHelloWorld: UIButton!
-    
+   
+    @IBOutlet var buttonTest: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
         setListener()
+        
     }
     
     private func setListener() {
