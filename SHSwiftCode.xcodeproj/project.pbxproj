@@ -1520,7 +1520,6 @@
 				56D3324F27C5F6AD00A021A2 /* I_HelloWorld */,
 				56D3325227C5F6AD00A021A2 /* III_TableView */,
 				56D3325527C5F6AD00A021A2 /* II_StackLayout */,
-				56D3325827C5F6AD00A021A2 /* IV_CustomTableView */,
 			);
 			path = SwiftInAction;
 			sourceTree = "<group>";
@@ -1550,13 +1549,6 @@
 				56D3325727C5F6AD00A021A2 /* SIAStackLayoutViewController.swift */,
 			);
 			path = II_StackLayout;
-			sourceTree = "<group>";
-		};
-		56D3325827C5F6AD00A021A2 /* IV_CustomTableView */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = IV_CustomTableView;
 			sourceTree = "<group>";
 		};
 		56D3327F27C601D600A021A2 /* Resources */ = {
